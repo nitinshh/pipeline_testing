@@ -7,12 +7,12 @@ const logger = require("morgan");
 const fileUpload = require("express-fileupload");
 const swaggerUi = require("swagger-ui-express");
 
-const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/userRoute")();
+// const indexRouter = require("./routes/index");
+// const usersRouter = require("./routes/userRoute")();
 
 const app = express();
 
-require("./dbConnection").connectdb();
+// require("./dbConnection").connectdb();
 
 // view engine setup
 app.set("view engine", "ejs");
