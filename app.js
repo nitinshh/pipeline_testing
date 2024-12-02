@@ -10,6 +10,9 @@ const swaggerUi = require("swagger-ui-express");
 // const indexRouter = require("./routes/index");
 // const usersRouter = require("./routes/userRoute")();
 
+var port = process.env.PORT || 3000;
+
+
 const app = express();
 
 // require("./dbConnection").connectdb();
@@ -72,4 +75,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-module.exports = app;
+app.listen(port, ()=>{
+  console.log(`server is running on port ${port}`)
+})
+// module.exports = app;
