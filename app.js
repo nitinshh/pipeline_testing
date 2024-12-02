@@ -10,7 +10,7 @@ const swaggerUi = require("swagger-ui-express");
 // const indexRouter = require("./routes/index");
 // const usersRouter = require("./routes/userRoute")();
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 
 
 const app = express();
